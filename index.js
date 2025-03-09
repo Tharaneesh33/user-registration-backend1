@@ -19,7 +19,7 @@ function swaggerDocumentation() {
   if (swaggerSpec.servers === undefined || swaggerSpec.servers === null) {
       swaggerSpec.servers = [];
   }
-  swaggerSpec.servers[0].url = '/';
+  swaggerSpec.servers[0].url = '/api/users';
   return swaggerSpec;
 }
 
