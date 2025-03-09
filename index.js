@@ -14,7 +14,7 @@ app.use(express.json()); // Middleware for JSON data
 
 function swaggerDocumentation() {
   /* Documentation */
-  const swaggerSpec = YAML.load('openapi.yml');
+  const swaggerSpec = YAML.load(path.join(process.cwd(), 'openapi.yml'));
   if (swaggerSpec.servers === undefined || swaggerSpec.servers === null) {
       swaggerSpec.servers = [];
   }
