@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
+const path = require('path');
 
 dotenv.config(); // Load environment variables
 
