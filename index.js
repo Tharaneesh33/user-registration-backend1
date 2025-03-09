@@ -19,6 +19,7 @@ function swaggerDocumentation() {
   if (swaggerSpec.servers === undefined || swaggerSpec.servers === null) {
       swaggerSpec.servers = [];
   }
+  swaggerSpec.servers[0].url = '/';
   return swaggerSpec;
 }
 
