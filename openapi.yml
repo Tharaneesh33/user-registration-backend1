@@ -7,6 +7,23 @@ servers:
   - url: http://localhost:5000/api/users
 
 paths:
+  '/genders':
+    get:
+      tags:
+        - Get Gender Options
+      description: |-
+        Lists all gender options
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        500:
+          description: Server error
   '/':
     post:
       tags:
