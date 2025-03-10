@@ -158,8 +158,6 @@ components:
           about:
             type: string
             example: "I am a software developer"
-    GetUserData:
-      type: array
-      items:
-          $ref: '#/components/schemas/GetUserData'
-    
+          __v:
+            type: integer
+            example: 0
